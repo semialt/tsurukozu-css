@@ -1,0 +1,22 @@
+body{
+  font-family: "ツルコズ", "コンデンス", "メイリオ" !important;
+}
+
+p.tweet-text{
+  font-family: "ツルコズ", "コンデンス", "メイリオ" !important;
+  font-size:larger;
+}
+
+@font-face{
+  font-family: "ツルコズ";
+  src: local("TBかなバンク-ツルコズ Std M");
+  unicode-range: U+3000-3002, U+3008-3011, U+3013-3019, U+3031-3032, U+3037, U+303C-3094, U+3099-30FE, U+FF01, U+FF03-06, U+FF08-FF1B, U+FF1D, U+FF1F-FF3B, U+FF3D, U+FF3F, U+FF41-FF5B, U+FF5D-FF65, U+FFE5, U+0020-003B, U+003D, U+003F-005B, U+005B, U+005F, U+0061-007B, U+007D-007E, U+00A5, U+00AD, U+00D7;
+}
+
+@font-face{
+  font-family: "コンデンス";
+  src: local("07ロゴたいぷゴシックCondense"); 
+  unicode-range: U+4E00-9FFF, U+3000-301F, U+3021-302F, U+3031-3032, U+303B-30FF, U+FF00-FF9F, U+FFE3-FFE5 ;
+  
+/*   src: local("TTEdit2/3ゴシック"); */
+}
