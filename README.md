@@ -5,3 +5,5 @@ tsurukozu-css
 
 ツルコズ：http://www.typebank.co.jp/kanabank/s-sobue.html
 ロゴたいぷゴシック-コンデンスド：http://www.fontna.com/blog/1345/
+
+ツルコズと各種長体書体との組合せ例について：http://semialt.hatenablog.com/entry/2014/09/07/230045
