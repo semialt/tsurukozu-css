@@ -1,0 +1,57 @@
+/*表示用の定義。なるべくツルコズを表示したいので、ツルコズに実装されている字形を全部含む"Tsurukozu-Full"を優先順位１番に。
+続けてAXIS Condensed Regular ProNを漢字用に指定し、Pro外の字形のために念のため源ノ角ゴシックRegularを指定（好みでNormalもあり）。
+AXISとツルコズを合わせると横が詰まるので、1pxの字間を設定する。1pxより小さい字間を設定できるなら、したい。
+*/
+
+* {
+    font-family: "Tsurukozu-Full", "AxisCondProN-Regular", "SourceHanSans-Regular" !important; 
+  letter-spacing: 1px;
+} 
+
+/*以下は入力欄用の定義。ツルコズでは、半角と全角の両方がある字については、同じ字形を表示してしまう。
+このため入力時に全角半角が意図せずに混在しないように、全角字形を含まないTsurukozu-Selectを優先順位１番にしている。
+*/
+
+input[type="text"]{
+    font-family: "Tsurukozu-Select", "AxisCondProN-Regular", "SourceHanSans-Regular" !important;
+  letter-spacing: 1px;
+}
+
+[contenteditable]{
+    font-family: "Tsurukozu-Select", "AxisCondProN-Regular", "SourceHanSans-Regular" !important;
+  letter-spacing: 1px;
+}
+
+[contenteditable] *{
+    font-family: "Tsurukozu-Select", "AxisCondProN-Regular", "SourceHanSans-Regular" !important;
+  letter-spacing: 1px;
+}
+
+textarea{
+    font-family: "Tsurukozu-Select", "AxisCondProN-Regular", "SourceHanSans-Regular" !important;
+  letter-spacing: 1px;
+}
+
+.tweet-text {
+font-size:larger;
+}
+
+a:link{
+  text-decoration:none;
+}
+
+a:visited{
+  text-decoration:none;
+}
+
+@font-face{
+  font-family: "Tsurukozu-Full";
+  src: local("TBKanaBTsurukozuStd-Medium");
+  unicode-range: U+3000-3002, U+3008-3011, U+3013-3019, U+3041-3094, U+3099-30FE, U+FF01, U+FF03-06, U+FF08-FF1B, U+FF1D, U+FF1F-FF3B, U+FF3D, U+FF3F, U+FF41-FF5B, U+FF5D-FF5e, u+ff61, u+ff62-ff65, U+FFE5, U+0020-003B, U+003D, U+003F-005B, U+005D, U+005F, U+0061-007B, U+007D-007E, U+00A5, U+00AD, U+00D, u+00F7;
+}
+
+@font-face{
+  font-family: "Tsurukozu-Select";
+  src: local("TBKanaBTsurukozuStd-Medium");
+  unicode-range: U+3000-3002, U+3008-3011, U+3013-3019, U+3041-3094, U+3099-30FE,  u+ff61-ff65, U+0020-003B, U+003D, U+003F-005B, U+005D, U+005F, U+0061-007B, U+007D-007E, U+00A5, U+00AD, U+00D, u+00F7;
+}
